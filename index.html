@@ -5,8 +5,100 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    <header class="main-header">
+      <h1 class="visually-hidden">GllacyShop</h1>
+      <img class="logo" src="#" alt="Логотип мазагина мороженного">
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-link"><a class="navigation-link" href="catalog.html">Каталог</a></li>
+          <li class="navigation-link"><a class="navigation-link" href="#">Доставка и оплата</a></li>
+          <li class="navigation-link"><a class="navigation-link" href="#">О компании</a></li>
+        </ul>
+        <ul class="navigation-user">
+          <li class="navigation-link"><a class="visually-hidden" href="#">Номер телефона</a></li>
+          <li class="navigation-link"><a class="visually-hidden" href="#">Поиск</a></li>
+          <li class="navigation-link"><a class="visually-hidden" href="#">Вход</a></li>
+          <li class="navigation-link"><a class="visually-hidden" href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-index">
+      <div class="main-information">
+        <section class="main-ice-cream">
+          <h2 class="visually-hidden">Карусель мороженного</h2>
+          <button class="previous-ice-cream" type="button"><span class="visually-hidden">Назад</span></button>
+          <button class="next-ice-cream" type="button"><span class="visually-hidden">Вперед</span></button>
+            <h3 class="ice-cream-title">Нежный пломбир с клубничным кремом</h3>
+            <img class="image-slider" src="#" alt="Мороженое в рожке с клубничным кремом">
+            <img class="image-slider-small" src="#" alt="Мороженое в рожке со вкусом банана">
+            <img class="image-slider-small" src="#" alt="Карамельный пломбир с маршмеллоу">
+            <p class="ice-cream-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом 
+            - это идеальный десерт для всей семьи</p>
+          <a class="order" type="button" href="#">Заказать</a>
+        </section>
+        <section class="contacts">
+            <ul>
+              <li class="contacts-list"><a class="visually-hidden" href="https://t.me/htmlacademy">Ссылка телеграмм</a></li>
+              <li class="contacts-list"><a class="visually-hidden" href="https://vk.com/htmlacademy">Ссылка ВКонтакте</a></li>
+              <li class="contacts-list"><a class="visually-hidden" href="https://www.youtube.com/user//htmlacademyru">Ссылка Ютюб</a></li>
+            </ul>
+        </section>
+      </div>
+      <section class="gift">
+        <h2 class="gift-title">Заказывайте мороженое и получайте подарки!</h2>
+        <ul class="gift-list">
+          <li class="gift-item">
+            <h3 class="gift-raspberry">Малинка даром!</h3>
+            <p class="gift-discription">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку 
+              малинового варенья бесплатно.</p>
+            <img class="gift-image" src="#" alt="Малина в рожковом стаканчике">
+            <button class="receive-gift" type="button">Хочу подарок</button>
+          </li>
+          <li class="gift-item">
+            <h3 class="gift-marshmallow">Малинка даром!</h3>
+            <p class="gift-discription">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных 
+              зефирок совершенно бесплатно.</p>
+            <img class="gift-image" src="#" alt="Маршмеллоу в рожковом стаканчике">
+            <button class="receive-gift" type="button">Хочу подарок</button>
+          </li>
+        </ul>
+      </section>
+      <section class="bestseller">
+        <h2 class="bestseller-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
+        <ul class="bestseller-list">
+          <li class="bestseller-item">
+            <img class="bestseller-image" src="#" alt="Малиновое мороженое">
+            <h3 class="bestseller-taste">Малинка</h3>
+            <p class="bestseller-description">Сливочное мороженое с малиновым джемом</p>
+            <b class="bestseller-price">310 р/кг</b>
+            <button class="buy-bestseller" type="button"><span class="visually-hidden">Добавить в корзину</span></button>
+          </li>
+          <li class="bestseller-item">
+            <img class="bestseller-image" src="#" alt="Фисташковое мороженое">
+            <h3 class="bestseller-taste">Фисташка</h3>
+            <p class="bestseller-description">Фисташковый пломбир с кусочками шоколада</p>
+            <b class="bestseller-price">340 р/кг</b>
+            <button class="buy-bestseller" type="button"><span class="visually-hidden">Добавить в корзину</span></button>
+          </li>
+          <li class="bestseller-item">
+            <img class="bestseller-image" src="#" alt="Черничное мороженое">
+            <h3 class="bestseller-taste">Черника</h3>
+            <p class="bestseller-description">Крем-брюле с черничным джемом</p>
+            <b class="bestseller-price">330 р/кг</b>
+            <button class="buy-bestseller" type="button"><span class="visually-hidden">Добавить в корзину</span></button>
+          </li>
+          <li class="bestseller-item">
+            <img class="bestseller-image" src="#" alt="Мороженое со вкусом бабл-гам">
+            <h3 class="bestseller-taste">Бабл-гам</h3>
+            <p class="bestseller-description">Ванильный пломбир со сладкой посыпкой</p>
+            <b class="bestseller-price">320 р/кг</b>
+            <button class="buy-bestseller" type="button"><span class="visually-hidden">Добавить в корзину</span></button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer></footer>
+    
 
   </body>
 </html>
