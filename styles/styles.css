@@ -1,0 +1,222 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/inter-400.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/inter-700.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url("fonts/inter-900.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #2d3440;
+    background-color: #feafc3;
+    font-size: 16px;
+    line-height: 22px;
+}
+ul{
+    list-style-type: none;
+}
+.navigation {
+    line-height: 20px;
+
+}
+.navigation-link{
+    color: #2d3440;
+    text-decoration: none;
+}
+.navigation-link.user  {
+    background-color: rgba(252, 252, 252, 0.3);
+    border-radius: 30px;
+}
+
+.ice-cream-title{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: left;
+    vertical-align: top;
+}
+.ice-cream-description {
+    font-size: 18px;
+    line-height: 24px;
+}
+.order {
+    color: #2d3440;
+    font-weight: 700;
+    line-height: 20px;
+    text-decoration: none;
+    background-color: #fcfcfc;
+    border: solid 4px;
+    border-color: rgba(252, 252, 252, 0.4);
+    border-radius: 26px;
+}
+.gift-item {
+    background-color: #ff7799;
+}
+.gift-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.gift-raspberry, 
+.gift-marshmelloy {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+.receive-gift {
+    font-weight: 700;
+    line-height: 20px;
+    color: rgba(45, 52, 64, 1);
+    background-color: rgba(252, 252, 252, 1);
+    border-color: rgba(252, 252, 252, 0.4);
+    border-radius: 26px;
+}
+.bestseller-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+    vertical-align: top;
+}
+.bestseller-taste {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.bestseller-price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.advantages {
+    background-image: url("../images/advantages/waffle-background.jpg");
+}
+.advantages-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+    vertical-align: top;
+}
+.shop-news {
+    width: 570px;
+    height: 224px;
+    background-image: url("../images/news_picture.jpg");
+    background-position: left 570px top 224px;
+}
+.shop-news-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #565c66;
+}
+.shop-news-link {
+    font-weight: 700;
+    font-size: 24;
+    line-height: 30px;
+    text-decoration: none;
+    color: #2d3440;
+}
+.mailing-list {
+    width: 570px;
+    height: 224px;
+    background-image: url("../images/mail-background.png");
+    border-radius: 16px;
+}
+.mailing-list-background {
+    width: 558px;
+    height: 212px;
+    background-color: #fcfcfc;
+    background-position: center center;
+}
+.mailing-list-button {
+    background-color: #feafc3;
+}
+.delivery {
+    background-image: url("../images/delivery-background-image.jpg");
+}
+.delivery-title {
+    font-size: 32px;
+    font-weight: 900;
+    list-style: 46px;
+}
+.delivery-information {
+    background-color: #fcfcfc;
+}
+.form-label {
+    font-weight: 700;
+    line-height: 20px;
+}
+.confirm-delivery {
+    border-color: rgba(45, 52, 64, 0.1);
+    font-weight: 700;
+    line-height: 20px;
+    color: #fcfcfc;
+    background-color: #ff2f64;
+    border-radius: 26px;
+    
+}
+label.required::after {
+    color: #2d3440;
+    content:  url("../images/advantages/required-item.svg");
+}
+.main-footer {
+    background-image: url("../images/footer-3-ice-cream.jpg");
+    background-size: 1170px 492px;
+}
+.main-footer-contacts {
+    color: #565c66;
+}
+.main-footer-contacts {
+    background-color: #fcfcfc;
+}
+.main-footer-address-link,
+.main-footer-telephone {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #2d3440;
+}
+.main-footer-schedule {
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer-button {
+    border-color: rgba(45, 52, 64, 0.1);
+    font-weight: 700;
+    line-height: 20px;
+    color: #fcfcfc;
+    background-color: #ff2f64;
+    border-radius: 26px;
+}
+.footer-link a{
+    text-decoration: none;
+    color: #2d3440;
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer-link-supplier{
+    font-weight: 700;
+}
+.footer-link-supplier::before{
+    content: url("../images/heart-icon.svg");
+}
