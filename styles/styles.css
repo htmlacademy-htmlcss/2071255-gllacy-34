@@ -89,12 +89,18 @@ ul{
     border-color: rgba(252, 252, 252, 0.4);
     border-radius: 26px;
 }
+.bestseller-item {
+    background-color: #fcfcfc;
+}
 .bestseller-title {
     font-weight: 900;
     font-size: 32px;
     line-height: 46px;
     text-align: center;
     vertical-align: top;
+}
+.bestseller-image {
+    border-radius: 150px;
 }
 .bestseller-taste {
     font-weight: 700;
@@ -106,8 +112,16 @@ ul{
     font-size: 20px;
     line-height: 24px;
 }
+.buy-bestseller {
+    background-color: #ff2f64;
+    background-image: url("../images/white-basket-icon.svg");
+    background-repeat: no-repeat ;
+    background-position: center;
+
+}
 .advantages {
     background-image: url("../images/advantages/waffle-background.jpg");
+    background-color: white;
 }
 .advantages-title {
     font-weight: 900;
