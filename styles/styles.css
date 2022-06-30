@@ -1,0 +1,303 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/inter-400.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/inter-700.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url("fonts/inter-900.woff2") format("woff2");
+    font-display: swap;
+}
+:root {
+    --extra-dark: #2d3440;
+    --dark: #565c66;
+    --neutral: #b9b9b9;
+    --light:#e7e7e7;
+    --extra-light: #fcfcfc;
+    --white: #ffffff;
+    --extra-bright-additional: #ff2f64;
+    --bright-additional: #ff4a78;
+    --neutral-additional: #ff7799;
+    --light-additional: #feafc3;
+    --extra-light-additional: #ffcbd8;
+    --regular-size: 16px/22px Inter, sans-serif;
+
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--extra-dark);
+    background-color: var(--light-additional);
+    font: var(--regular-size);
+}
+ul{
+    list-style-type: none;
+}
+.navigation {
+    font: var(--regular-size);
+
+}
+.navigation-link{
+    color: var(--extra-dark);
+    text-decoration: none;
+}
+.navigation-link.user  {
+    background-color: var(--extra-light-additional);
+    border-radius: 30px;
+}
+
+.ice-cream-title{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: left;
+    vertical-align: top;
+}
+.ice-cream-description {
+    font-size: 18px;
+    line-height: 24px;
+}
+.order {
+    color: var(--extra-dark);
+    font-weight: 700;
+    line-height: 20px;
+    text-decoration: none;
+    background-color: var(--extra-light);
+    border: solid 4px;
+    border-color: var(--extra-light-additional);
+    border-radius: 26px;
+}
+.gift-item {
+    background-color: var(--neutral-additional);
+}
+.gift-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.gift-raspberry, 
+.gift-marshmelloy {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+.receive-gift {
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--extra-dark);
+    background-color: var(--extra-light);
+    border: 4px solid;
+    border-color: var(--extra-light-additional);
+    border-radius: 26px;
+}
+.bestseller-item {
+    background-color: var(--extra-light);
+}
+.bestseller-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+    vertical-align: top;
+}
+.bestseller-image {
+    border-radius: 150px;
+}
+.bestseller-taste {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.bestseller-price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.buy-bestseller {
+    background-color: var(--extra-bright-additional);
+    background-image: url("../images/white-basket-icon.svg");
+    background-repeat: no-repeat ;
+    background-position: center;
+
+}
+.advantages {
+    background-image: url("../images/advantages/waffle-background.jpg");
+
+}
+.advantages-background {
+
+}
+.advantages-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+    vertical-align: top;
+}
+.shop-news {
+    width: 570px;
+    height: 224px;
+    background-image: url("../images/news_picture.jpg");
+    background-size: 570px;
+    background-position: center
+}
+.shop-news-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #565c66;
+}
+.shop-news-link {
+    font-weight: 700;
+    font-size: 24;
+    line-height: 30px;
+    text-decoration: none;
+    color: var(--extra-dark);
+}
+.mailing-list {
+    width: 570px;
+    height: 224px;
+    background-image: url("../images/mail-background.png");
+    border-radius: 16px;
+}
+.mailing-list-background {
+    width: 558px;
+    height: 212px;
+    background-color: var(--white);
+    background-position: center center;
+}
+.mailing-list-button {
+    background-color: var(--extra-bright-additional);
+    border: 4px solid var(--light-additional);
+    border-radius: 26px;
+    color: var(--extra-light)
+}
+.delivery {
+    background-image: url("../images/delivery-background-image.jpg");
+}
+.delivery-title {
+    font-size: 32px;
+    font-weight: 900;
+    list-style: 46px;
+}
+.delivery-information {
+    background-color: var(--white);
+}
+.form-label {
+    font-weight: 700;
+    line-height: 20px;
+}
+.confirm-delivery {
+    border: 4px solid var(--light-additional);
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--extra-light);
+    background-color: var(--extra-bright-additional);
+    border-radius: 26px;
+    
+}
+label.required::after {
+    color: var(--extra-dark);
+    content:  url("../images/advantages/required-item.svg");
+}
+.main-footer {
+    background-image: url("../images/footer-3-ice-cream.jpg");
+    background-size: 1170px 492px;
+}
+.main-footer-contacts {
+    color: var(--dark);
+}
+.main-footer-contacts {
+    background-color: var(--extra-light);
+}
+.main-footer-address-link,
+.main-footer-telephone {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    color: var(--extra-dark);
+}
+.main-footer-schedule {
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer-button {
+    border: 4px solid var(--light-additional);
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--extra-light);
+    background-color: var(--extra-bright-additional);
+    border-radius: 26px;
+}
+.footer-link a{
+    text-decoration: none;
+    color: var(--extra-dark);
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer-link-supplier{
+    font-weight: 700;
+}
+.footer-link-supplier::before{
+    content: url("../images/heart-icon.svg");
+}
+.catalog-filter {
+    font-size: 14px;
+    line-height: 20px;
+}
+.filter-select {
+    background-color: rgba(252, 252, 252, 0.3);
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+}
+.pagination-link {
+    line-height: 20px;
+    text-decoration: none;
+    color: var(--extra-dark);
+}
+.pagination-current {
+    background-color: #fcfcfc;
+    border-radius: 76px;
+}
+.product-list-item {
+    background-color: #fcfcfc;
+}
+
+.product-list-image {
+    border-radius: 150px;
+}
+.product-list-taste {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.product-list-price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.buy-product {
+    background-color: var(--extra-bright-additional);
+    background-image: url("../images/white-basket-icon.svg");
+    background-repeat: no-repeat ;
+    background-position: center;
+
+}
