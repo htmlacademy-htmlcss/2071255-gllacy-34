@@ -39,14 +39,13 @@ body {
     font-family: "Inter", sans-serif;
     color: var(--extra-dark);
     background-color: var(--light-additional);
-    font-size: 16px;
-    line-height: 22px;
+    font: var(--regular-size);
 }
 ul{
     list-style-type: none;
 }
 .navigation {
-font: var(--regular-size);
+    font: var(--regular-size);
 
 }
 .navigation-link{
@@ -106,7 +105,7 @@ font: var(--regular-size);
     border-radius: 26px;
 }
 .bestseller-item {
-    background-color: #fcfcfc;
+    background-color: var(--extra-light);
 }
 .bestseller-title {
     font-weight: 900;
@@ -178,13 +177,14 @@ font: var(--regular-size);
 .mailing-list-background {
     width: 558px;
     height: 212px;
-    background-color: #fcfcfc;
+    background-color: var(--white);
     background-position: center center;
 }
 .mailing-list-button {
     background-color: var(--extra-bright-additional);
     border: 4px solid var(--light-additional);
     border-radius: 26px;
+    color: var(--extra-light)
 }
 .delivery {
     background-image: url("../images/delivery-background-image.jpg");
@@ -195,7 +195,7 @@ font: var(--regular-size);
     list-style: 46px;
 }
 .delivery-information {
-    background-color: #fcfcfc;
+    background-color: var(--white);
 }
 .form-label {
     font-weight: 700;
@@ -205,7 +205,7 @@ font: var(--regular-size);
     border: 4px solid var(--light-additional);
     font-weight: 700;
     line-height: 20px;
-    color: #fcfcfc;
+    color: var(--extra-light);
     background-color: var(--extra-bright-additional);
     border-radius: 26px;
     
@@ -219,10 +219,10 @@ label.required::after {
     background-size: 1170px 492px;
 }
 .main-footer-contacts {
-    color: #565c66;
+    color: var(--dark);
 }
 .main-footer-contacts {
-    background-color: #fcfcfc;
+    background-color: var(--extra-light);
 }
 .main-footer-address-link,
 .main-footer-telephone {
@@ -240,7 +240,7 @@ label.required::after {
     border: 4px solid var(--light-additional);
     font-weight: 700;
     line-height: 20px;
-    color: #fcfcfc;
+    color: var(--extra-light);
     background-color: var(--extra-bright-additional);
     border-radius: 26px;
 }
