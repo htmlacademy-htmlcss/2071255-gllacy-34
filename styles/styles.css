@@ -128,21 +128,31 @@ ul{
     padding: 6px 0;
     background-color: transparent;
 }
-/*Слайдер*/
+/*слайдер*/
 .main-information{
     display: flex;
+    height: 554px;
 }
+/*Текстовые блоки слайдера*/
+.main-information-text{
+    margin-left: 70px;
+    margin-top: 136px;
+    width: 470px;
 
+}
 .ice-cream-title{
     font-weight: 900;
     font-size: 36px;
     line-height: 46px;
-    text-align: left;
-    vertical-align: top;
+    margin: 0;
+    margin-bottom: 24px;
 }
 .ice-cream-description {
     font-size: 18px;
     line-height: 24px;
+    margin: 0;
+    margin-right: 56px;
+    margin-bottom: 48px;
 }
 .order {
     color: var(--extra-dark);
@@ -153,6 +163,23 @@ ul{
     border: solid 4px;
     border-color: var(--extra-light-additional);
     border-radius: 26px;
+}
+/*Картинки слайдера*/
+.main-ice-cream-slider{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    
+}
+.image-slider-big{
+    background-image: url("../images/slider-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.image-slider{
+    margin: 21px 21px 26px;
+
 }
 .gift-item {
     background-color: var(--neutral-additional);
