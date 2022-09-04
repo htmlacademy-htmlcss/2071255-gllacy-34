@@ -32,6 +32,7 @@
     --light-additional: #feafc3;
     --extra-light-additional: #ffcbd8;
     --regular-size: 16px/22px Inter, sans-serif;
+    --title-text: 900 32px/46px Inter, sans-serif;
 
 }
 
@@ -40,21 +41,96 @@ body {
     color: var(--extra-dark);
     background-color: var(--light-additional);
     font: var(--regular-size);
+    margin: 0;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 ul{
     list-style-type: none;
 }
-.navigation {
-    font: var(--regular-size);
+.main-container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/*Хедер главной страницы*/
 
+.main-header {
+    display: flex;
+
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: var(--regular-size);
+    flex-grow: 1;
+}
+.logo{
+    margin: 24px 0;
+    margin-right: 16px;
+}
+.navigation-wrapper{
+    
+}
+.navigation-list{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
 }
 .navigation-link{
     color: var(--extra-dark);
     text-decoration: none;
+    padding: 8px 16px;
 }
-.navigation-link.user  {
+.user-wrapper{
+
+}
+.user-list{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 32px;
+
+}
+
+.user-item{
+    margin-right: 16px;
+    padding: auto 16px;
+    box-sizing: border-box;
+}
+.user-item:last-child{
+    margin-right: 0;
+}
+.user-link {
+    color: var(--extra-dark);
+    text-decoration: none;
     background-color: var(--extra-light-additional);
     border-radius: 30px;
+    padding: 6px 16px;
+
+}
+.user-link.telephone{
+    line-height: 20px;
+    font-weight: 700;
+    margin: 0;
+    padding: 6px 0;
+    background-color: transparent;
+}
+/*Слайдер*/
+.main-information{
+    display: flex;
 }
 
 .ice-cream-title{
@@ -82,9 +158,7 @@ ul{
     background-color: var(--neutral-additional);
 }
 .gift-title {
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 46px;
+    font: var(--title-text);
     text-align: center;
     vertical-align: top;
 }
@@ -108,9 +182,7 @@ ul{
     background-color: var(--extra-light);
 }
 .bestseller-title {
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 46px;
+    font: var(--title-text);
     text-align: center;
     vertical-align: top;
 }
@@ -142,9 +214,7 @@ ul{
 
 }
 .advantages-title {
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 46px;
+    font: var(--title-text);
     text-align: center;
     vertical-align: top;
 }
@@ -190,9 +260,7 @@ ul{
     background-image: url("../images/delivery-background-image.jpg");
 }
 .delivery-title {
-    font-size: 32px;
-    font-weight: 900;
-    list-style: 46px;
+    font: var(--title-text);
 }
 .delivery-information {
     background-color: var(--white);
