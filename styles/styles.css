@@ -131,7 +131,9 @@ ul{
 /*слайдер*/
 .main-information{
     display: flex;
+    position: relative;
     height: 554px;
+    margin-bottom: 80px;
 }
 /*Текстовые блоки слайдера*/
 .main-information-text{
@@ -168,6 +170,7 @@ ul{
 .main-ice-cream-slider{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-grow: 1;
     
 }
@@ -179,16 +182,48 @@ ul{
 }
 .image-slider{
     margin: 21px 21px 26px;
+}
+.image-slider-additional{
 
+    background-image: url("../images/slider-background-small.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.image-slider-small{
+    margin: 0 17px;
+}
+/**Слайдер хлебные крошки и соцсети**/
+.contacts{
+    position: absolute;
+    bottom:0;
+    right: 0;
+
+}
+.contacts-list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 24px;
+}
+.contacts-item{
+    margin-right: 16px;
+}
+.contacts-item:last-child{
+    margin-right: 0;
+}
+.contacts-link{
+
+}
+/**Банеры**/
+.gift-title {
+    font: var(--title-text);
+    margin: 0 368px 55px;
+    text-align: center;
 }
 .gift-item {
     background-color: var(--neutral-additional);
 }
-.gift-title {
-    font: var(--title-text);
-    text-align: center;
-    vertical-align: top;
-}
+
 
 .gift-raspberry, 
 .gift-marshmelloy {
