@@ -273,6 +273,9 @@ ul{
     grid-row: 1/4;
 }
 /**Лучшие вкусы мороженого**/
+.bestseller{
+    margin-bottom: 80px;
+}
 .bestseller-title {
     font: var(--title-text);
     text-align: center;
@@ -286,17 +289,34 @@ ul{
     gap: 30px;
 }
 .bestseller-item {
+    width: 270px;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
     background-color: var(--extra-light);
 }
-
-
 .bestseller-image {
     border-radius: 150px;
+    margin: -51px auto 0;
 }
 .bestseller-taste {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    margin: 0;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.bestseller-description{
+    margin-bottom: 16px;
+    text-align: center;
+
+}
+.bestseller-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
 }
 .bestseller-price {
     font-weight: 700;
@@ -304,17 +324,29 @@ ul{
     line-height: 24px;
 }
 .buy-bestseller {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
     background-color: var(--extra-bright-additional);
     background-image: url("../images/white-basket-icon.svg");
     background-repeat: no-repeat ;
     background-position: center;
 
 }
+/**Преимущества**/
 .advantages {
-    background-image: url("../images/advantages/waffle-background.jpg");
+    background-image: url("../images/advantages/waffle-background.jpg") 24px round round;
 
 }
 .advantages-background {
+    border: solid 24px;
+    -moz-border-image: url(images/bg-image.png) 30 round round;
+    -webkit-border-image: url(images/bg-image.png) 30 round round; 
+    -o-border-image: url(images/bg-image.png) 30 round round;
+    border-image: url(images/bg-image.png) 30 round round;
+    border-image: url("../images/advantages/waffle-background.jpg") 24px round round;
+    
 
 }
 .advantages-title {
