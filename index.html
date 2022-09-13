@@ -124,7 +124,7 @@
             <h2 class="bestseller-title">Попробуйте самые популярные <br>вкусы нашего мороженого</h2>
             <ul class="bestseller-list">
               <li class="bestseller-item">
-                <img class="bestseller-image" src="images/catalog/raspberry-jam.jpg" alt="Малиновое мороженое">
+                <img class="bestseller-image" src="images/catalog/raspberry-jam.png" alt="Малиновое мороженое">
                   <h3 class="bestseller-taste">Малинка</h3>
                   <p class="bestseller-description">Сливочное мороженое с малиновым джемом</p>
                 <div class="bestseller-buttons">
@@ -196,87 +196,108 @@
             </div>
           </section>
         </div>
-        <section class="shop-news">
-          <h2 class="shop-news-title">Новое в нашем блоге</h2>
-          <a class="shop-news-link" href="#">10 способов сервировки фруктовых щербетов
-            к столу</a>
-        </section>
-        <section class="mailing-list">
-          <div class="mailing-list-background">
-          <h2 class="visually-hidden">Подписка на рассылку</h2>
-          <p class="mailing-list-discription">Подпишитесь на нашу сладкую рассылку и будьте всегда
-            в курсе всего самого вкусного, что у нас происходит. 
-            Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <input type="text" id="mailing-list-email" name="mailing-list-email" placeholder="email@example.com">
-          <button class="mailing-list-button" type="button">Отправить</button>
+        <div class="main-container">
+          <div class="news-wrapper">
+            <section class="shop-news">
+              <h2 class="shop-news-title">Новое в нашем блоге</h2>
+              <a class="shop-news-link" href="#">10 способов сервировки фруктовых щербетов
+                к столу</a>
+            </section>
+            <section class="mailing-list">
+              <div class="mailing-list-background">
+              <h2 class="visually-hidden">Подписка на рассылку</h2>
+              <p class="mailing-list-discription">Подпишитесь на нашу сладкую рассылку и будьте всегда
+                в курсе всего самого вкусного, что у нас происходит. 
+                Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                <div class="mailing-form">
+                  <input type="text" id="mailing-list-email" name="mailing-list-email" placeholder="email@example.com">
+                  <button class="mailing-list-button" type="button">Отправить</button>
+                </div>
+            </div>
+            </section>
           </div>
-        </section>
-        <div class="delivery">
-          <h2 class="delivery-title">Доставка любимого мороженного на дом</h2>
-          <p class="delivery-description">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? 
-            Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-          <section class="delivery-information">
-            <h3 class="delivery-information-description">Укажите адрес и дату доставки, и мы свяжемся с вами,
-              чтобы подтвердить заказ</h3>
-            <p class="delivery-information-date">
-              <label class="form-label  required" for="delivery-date">Дата</label>
-              <input type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" required="required">
-            </p>
-            <p class="delivery-information-telephone">
-              <label class="form-label" for="delivery-telephone">Телефон</label>
-              <input type="text" id="delivery-telephone" name="delivery-telephone" placeholder="+7 800 999-00-00">
-            </p>
-            <p class="delivery-information-address">
-              <label class="form-label  required" for="delivery-address">Адрес</label>
-              <input type="text" id="delivery-address" name="delivery-address" 
-              placeholder="ул. Большая Конюшенная, 19/8" required="required">
-            </p>
-            <button class="confirm-delivery" type="button">Отправить</button>
-          </section>
+        </div>
+        <div class="main-container">
+          <div class="delivery-background">
+            <div class="delivery">
+              <div class="delivery-text-wrapper">
+                <h2 class="delivery-title">Доставка любимого мороженного на дом</h2>
+                <p class="delivery-description">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? 
+                  Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+              </div>
+              <div class="delivery-information">
+                <h3 class="delivery-information-description">Укажите адрес и дату доставки, и мы свяжемся с вами,
+                  чтобы подтвердить заказ</h3>
+                  <div class="delivery-form-wrapper" >
+                    <div class="delivery-information-date">
+                      <label class="form-label  required" for="delivery-date">Дата</label>
+                      <input class="delivery-input" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" required="required">
+                    </div>
+                    <div class="delivery-information-telephone">
+                      <label class="form-label" for="delivery-telephone">Телефон</label>
+                      <input class="delivery-input" type="text" id="delivery-telephone" name="delivery-telephone" placeholder="+7 800 999-00-00">
+                    </div>
+                    <div class="delivery-information-address">
+                      <label class="form-label  required" for="delivery-address">Адрес</label>
+                      <input class="delivery-input" type="text" id="delivery-address" name="delivery-address" 
+                      placeholder="ул. Большая Конюшенная, 19/8" required="required">
+                    </div>
+                  </div>
+                <button class="confirm-delivery" type="button">Отправить</button>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
-    <footer class="main-footer">
-      <section class="main-footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="main-footer-description">Адрес главного офиса и онлайн магазина</p>
-        <a class="main-footer-address-link" href="#">наб. реки Карповки, 5 лит П, Санкт-Петербург</a>
-        <p class="main-footer-description">Для заказов по телефону:</p>
-        <b class="main-footer-telephone">+7 (812) 812-12-12</b>
-        <p class="main-footer-schedule">(с 10 до 20 ежедневно)</p>
-        <button class="footer-button" type="button">Форма обратной связи</button>
-      </section>
-      <section class="contacts">
-        <ul>
-          <li class="contacts-list">
-            <a class="contacts-link" href="https://t.me/htmlacademy"><img class="search" src="images/telegram.svg">
-              <span class="visually-hidden">Ссылка телеграмм</span>
-            </a>
-          </li>
-          <li class="contacts-list">
-            <a class="contacts-link" href="https://vk.com/htmlacademy" ><img class="search" src="images/vk.svg">
-              <span class="visually-hidden">Ссылка ВКонтакте</span>
-            </a>
-          </li>
-          <li class="contacts-list">
-            <a class="contacts-link" href="https://www.youtube.com/user//htmlacademyru"><img class="search" src="images/youtube.svg">
-              <span class="visually-hidden">Ссылка Ютюб</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-link">
-        <a class="footer-link-supplier" href="#">Для поставщиков</a>
-        <a class="footer-link-production" href="#">О производстве</a>
-        <a class="footer-link-documents" href="#">Наши документы</a>
-        <a class="footer-link-eсo-standarts" href="#">Экологические стандарты</a>
-      </section>
-      <section class="copyright">
-        <img class="copyright-logo" src="images/logo-htmlacademy.svg" alt="Логотип HTML Академии">
-        <p class="copyright-text">Сделано в <a class="htmlacademy-link" 
-          href="https://htmlacademy.ru/">.html academy &copy; 2021</a></p>
-      </section>
-    </footer>
+    <div class="main-container">
+      <div class="contacts-background">
+        <section class="main-footer-contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="main-footer-description">Адрес главного офиса и онлайн магазина</p>
+          <a class="main-footer-address-link" href="#">наб. реки Карповки, 5 лит П, Санкт-Петербург</a>
+          <p class="main-footer-description">Для заказов по телефону:</p>
+          <b class="main-footer-telephone">+7 (812) 812-12-12</b>
+          <p class="main-footer-schedule">(с 10 до 20 ежедневно)</p>
+          <button class="footer-button" type="button">Форма обратной связи</button>
+        </section>
+      </div>
+    </div>
+    <div class="main-container">
+        <footer class="main-footer">
+          <section class="contacts-footer">
+            <ul class="contacts-footer-list">
+              <li class="contacts-footer-item">
+                <a class="contacts-link" href="https://t.me/htmlacademy"><img class="search" src="images/telegram.svg">
+                  <span class="visually-hidden">Ссылка телеграмм</span>
+                </a>
+              </li>
+              <li class="contacts-footer-item">
+                <a class="contacts-link" href="https://vk.com/htmlacademy" ><img class="search" src="images/vk.svg">
+                  <span class="visually-hidden">Ссылка ВКонтакте</span>
+                </a>
+              </li>
+              <li class="contacts-footer-item">
+                <a class="contacts-link" href="https://www.youtube.com/user//htmlacademyru"><img class="search" src="images/youtube.svg">
+                  <span class="visually-hidden">Ссылка Ютюб</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer-link">
+            <a class="footer-link-supplier" href="#">Для поставщиков</a>
+            <a class="footer-link-production" href="#">О производстве</a>
+            <a class="footer-link-documents" href="#">Наши документы</a>
+            <a class="footer-link-eсo-standarts" href="#">Экологические стандарты</a>
+          </section>
+          <section class="copyright">
+            <img class="copyright-logo" src="images/logo-htmlacademy.svg" alt="Логотип HTML Академии">
+            <p class="copyright-text">Сделано в <a class="htmlacademy-link" 
+              href="https://htmlacademy.ru/">.html academy &copy; 2021</a></p>
+          </section>
+        </footer>
+    </div>
+  </div>
     
 
   </body>
