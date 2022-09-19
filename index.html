@@ -8,7 +8,7 @@
   <body>
     <div class="main-container" >
       <header class="main-header">
-        <h1 class="visually-hidden">GllacyShop</h1>
+        <h1 class="visually-hidden">Магазин мороженного GllacyShop</h1>
         <img class="logo" src="images/logo.svg" alt="Логотип мазагина мороженного" width="137px" height="56px">
         <nav class="navigation">
           <div class="navigation-wrapper">
@@ -100,7 +100,7 @@
         </div>
         <div class="main-container">
           <section class="gift">
-            <h2 class="gift-title">Заказывайте мороженое <br>и получайте подарки!</h2>
+            <h2 class="gift-title">Заказывайте мороженое и получайте подарки!</h2>
             <ul class="gift-list">
               <li class="gift-item">
                 <h3 class="gift-subtitle">Малинка даром!</h3>
@@ -210,8 +210,10 @@
                 в курсе всего самого вкусного, что у нас происходит. 
                 Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <div class="mailing-form">
-                  <input type="text" id="mailing-list-email" name="mailing-list-email" placeholder="email@example.com">
-                  <button class="mailing-list-button" type="button">Отправить</button>
+                  <form action="https://echo.htmlacademy.ru/courses" method="get">
+                    <input type="email" id="mailing-list-email" name="mailing-list-email" placeholder="email@example.com">
+                    <button class="mailing-list-button" type="button">Отправить</button>
+                  </form>
                 </div>
             </div>
             </section>
@@ -230,17 +232,23 @@
                   чтобы подтвердить заказ</h3>
                   <div class="delivery-form-wrapper" >
                     <div class="delivery-information-date">
-                      <label class="form-label  required" for="delivery-date">Дата</label>
-                      <input class="delivery-input" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" required="required">
+                      <form action="https://echo.htmlacademy.ru/courses" method="get">
+                        <label class="form-label  required" for="delivery-date">Дата</label>
+                        <input class="delivery-input" type="date" id="delivery-date" name="delivery-date" placeholder="01.04.2020" required="required">
+                      </form>
                     </div>
                     <div class="delivery-information-telephone">
-                      <label class="form-label" for="delivery-telephone">Телефон</label>
-                      <input class="delivery-input" type="text" id="delivery-telephone" name="delivery-telephone" placeholder="+7 800 999-00-00">
+                      <form action="https://echo.htmlacademy.ru/courses" method="get">
+                        <label class="form-label" for="delivery-telephone">Телефон</label>
+                        <input class="delivery-input" type="tel" id="delivery-telephone" name="delivery-telephone" placeholder="+7 800 999-00-00">
+                      </form>
                     </div>
                     <div class="delivery-information-address">
-                      <label class="form-label  required" for="delivery-address">Адрес</label>
-                      <input class="delivery-input" type="text" id="delivery-address" name="delivery-address" 
-                      placeholder="ул. Большая Конюшенная, 19/8" required="required">
+                      <form action="https://echo.htmlacademy.ru/courses" method="get">
+                        <label class="form-label  required" for="delivery-address">Адрес</label>
+                        <input class="delivery-input" type="text" id="delivery-address" name="delivery-address" 
+                        placeholder="ул. Большая Конюшенная, 19/8" required="required">
+                    </form>
                     </div>
                   </div>
                 <button class="confirm-delivery" type="button">Отправить</button>

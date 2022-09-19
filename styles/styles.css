@@ -76,8 +76,7 @@ ul{
     flex-grow: 1;
 }
 .logo{
-    margin: 24px 0;
-    margin-right: 16px;
+    margin: 24px 16px 24px 0;
 }
 .navigation-wrapper{
     
@@ -152,9 +151,8 @@ ul{
 .ice-cream-description {
     font-size: 18px;
     line-height: 24px;
-    margin: 0;
-    margin-right: 56px;
-    margin-bottom: 48px;
+    margin: 0 56px 48px 0;
+
 }
 .order {
     color: var(--extra-dark);
@@ -162,8 +160,7 @@ ul{
     line-height: 20px;
     text-decoration: none;
     background-color: var(--extra-light);
-    border: solid 4px;
-    border-color: var(--extra-light-additional);
+    border: solid 4px var(--extra-light-additional);
     border-radius: 26px;
 }
 /*Картинки слайдера*/
@@ -211,9 +208,7 @@ ul{
 .contacts-item:last-child{
     margin-right: 0;
 }
-.contacts-link{
 
-}
 /**Банеры**/
 .gift{
     margin-bottom: 80px;
@@ -222,6 +217,7 @@ ul{
     font: var(--title-text);
     margin: 0 auto 55px;
     text-align: center;
+    max-width: 470px;
 
 }
 .gift-list{
@@ -263,8 +259,7 @@ ul{
     grid-row: 3/4;
     color: var(--extra-dark);
     background-color: var(--extra-light);
-    border: 4px solid;
-    border-color: var(--extra-light-additional);
+    border: 4px solid var(--extra-light-additional);
     border-radius: 26px;
     margin-bottom: 36px;
 }
@@ -286,14 +281,18 @@ ul{
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 30px;
 }
 .bestseller-item {
     width: 270px;
+    margin-right: 30px;
     padding: 0 40px;
     display: flex;
     flex-direction: column;
     background-color: var(--extra-light);
+    box-sizing: border-box;
+}
+.bestseller-item:nth-child(4n+4){
+    margin-right: 0;
 }
 .bestseller-image {
     border-radius: 150px;
@@ -357,8 +356,8 @@ ul{
     font-weight: 700;
     text-align: center;
     vertical-align: top;
-    margin: 0 auto;
-    margin-bottom: 56px;
+    margin: 0 auto 56px;
+
 }
 .advantages-list{
     margin: 0 40px;
@@ -635,6 +634,11 @@ label.required::after {
 /**Ссылки футер**/
 .footer-link{
     margin-right: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 8px;
+    column-gap: 24px;
 }
 
 .footer-link a{
@@ -661,9 +665,38 @@ label.required::after {
     margin: 0;
 }
 /**Каталог??**/
+/**Хлебные крошки**/
+.navigation-link-current{
+    background-color: var(--extra-bright-additional);
+    border-radius: 30px;
+    color: var(--extra-light);
+}
+.breadcrumbs-wrapper{
+    margin-top: 32px;
+}
+.breadcrumbs{
+    display: flex;
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+}
+.catalog-title{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 46px;
+    margin: 0;
+}
+/**Фильтр**/
 .catalog-filter {
     font-size: 14px;
     line-height: 20px;
+    width: 823px;
+    height: 148px;
+    margin-bottom: 95px;
+}
+.filter-wrapper{
+    display: flex;
 }
 .filter-select {
     background-color: rgba(252, 252, 252, 0.3);
@@ -672,6 +705,19 @@ label.required::after {
     font-size: 14px;
     line-height: 20px;
     font-family: "Inter", sans-serif;
+}
+/**Жирность**/
+.fat-filter-title{
+    margin: 0;
+    margin-bottom: 8px;
+}
+.fat-filter-list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.catalog-filter-list{
+    display: flex;
 }
 .pagination-link {
     line-height: 20px;
@@ -682,27 +728,26 @@ label.required::after {
     background-color: #fcfcfc;
     border-radius: 76px;
 }
-.product-list-item {
-    background-color: #fcfcfc;
+/**Список продуктов магазина**/
+.catalog-product-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-
-.product-list-image {
-    border-radius: 150px;
+.catalog-product-list .bestseller-item{
+    margin-bottom: 91px;
 }
-.product-list-taste {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
+/**Пагинация**/
+.catalog-pagination{
+    height: 126px;
+    margin-top: -85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.product-list-price {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-}
-.buy-product {
-    background-color: var(--extra-bright-additional);
-    background-image: url("../images/white-basket-icon.svg");
-    background-repeat: no-repeat ;
-    background-position: center;
-
+.pagination-list{
+    display: flex;
+    margin: ;
 }
