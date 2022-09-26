@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" width="32px">
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
@@ -31,19 +32,25 @@
               </li>
               <li class="user-item">
                 <a class="user-link" href="#">
-                  <img class="search" src="images/search.svg">
+                  <svg class="user-icon" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.663 6.188a4.667 4.667 0 1 1 8.028 3.237.674.674 0 0 0-.124.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z"/>
+                  </svg>
                     <span class="visually-hidden">Поиск</span>
                 </a>
               </li>
               <li class="user-item">
-                <a class="user-link" href="#">
-                  <img class="search" src="images/enter-icon.svg">
+                <a class="user-link user-link-text" href="#">
+                  <svg class="user-icon" aria-hidden="true" focusable="false" width="14" height="15" viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.525c0-.369.298-.667.667-.667h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H8.667a.667.667 0 0 1 0-1.333h2.666A.667.667 0 0 0 12 12.19V2.858a.666.666 0 0 0-.667-.667H8.667A.667.667 0 0 1 8 1.525ZM4.862 3.72c.26-.26.682-.26.943 0l3.329 3.329a.673.673 0 0 1 .2.476.664.664 0 0 1-.2.476l-3.33 3.328a.667.667 0 1 1-.942-.943l2.195-2.195H.667a.667.667 0 1 1 0-1.333h6.39L4.862 4.663a.667.667 0 0 1 0-.943Z"/>
+                  </svg>
                   Вход
                 </a>
               </li>
               <li class="user-item">
-                <a class="user-link" href="#">
-                  <img class="search" src="images/basket-icon.svg">
+                <a class="user-link user-link-text" href="#">
+                  <svg class="user-icon" aria-hidden="true" focusable="false" width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167.108a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.644a.667.667 0 0 0-.654-.536H1.167ZM5.69 8.402l-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
+                  </svg>
                   2 товара
                     <span class="visually-hidden">Корзина</span>
                 </a>
@@ -61,13 +68,28 @@
             <h3 class="ice-cream-title">Нежный пломбир <br>с клубничным кремом</h3>
             <p class="ice-cream-description">Натуральное мороженое из свежих сливок <br>и молока с вкуснейшим клубничным джемом 
               <br>- это идеальный десерт для всей семьи</p>
-            <a class="order" type="button" href="#">Заказать</a>
+            <a class="order" href="#">Заказать</a>
           </div>
           <div class="main-ice-cream-slider">
-            <!--<button class="previous-ice-cream" type="button"><span class="visually-hidden">Назад</span></button>
-            <button class="next-ice-cream" type="button"><span class="visually-hidden">Вперед</span></button>
-            -->
             <div class="image-slider-big">
+              <div class="slider-button-wrapper">
+                <button class="slider-button slider-button-prev" type="button">
+                  <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="37" y="37" width="36" height="36" rx="18" transform="rotate(180 37 37)" fill="#FCFCFC" fill-opacity=".3"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.865 24.135a.665.665 0 0 0 .94-.94l-4.201-4.201 4.201-4.202a.665.665 0 0 0-.94-.94l-4.669 4.668-.003.003c-.26.26-.26.681 0 .94l4.672 4.672Z" fill="#FCFCFC"/>
+                    <rect x="37" y="37" width="36" height="36" rx="18" transform="rotate(180 37 37)" stroke="#FCFCFC" stroke-width="2"/>
+                  </svg>
+                  <span class="visually-hidden">Назад</span>
+                </button>
+                <button class="slider-button slider-button-next" type="button">
+                  <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="36" height="36" rx="18" fill="#FCFCFC" fill-opacity=".3"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.135 13.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94l4.669-4.668.003-.003c.26-.26.26-.681 0-.94l-4.672-4.672Z" fill="#FCFCFC"/>
+                    <rect x="1" y="1" width="36" height="36" rx="18" stroke="#FCFCFC" stroke-width="2"/>
+                  </svg>
+                  <span class="visually-hidden">Назад</span>
+                </button>
+              </div>
               <img class="image-slider" src="images/ice-cream-raspberry.png" width="306" height="507" alt="Мороженое в рожке с клубничным кремом">
             </div>
             <div class="image-slider-additional"> 
@@ -79,17 +101,20 @@
             <div class="contacts">
               <ul class="contacts-list">
                 <li class="contacts-item">
-                  <a class="contacts-link" href="https://t.me/htmlacademy"><img class="search" src="images/telegram.svg" width="24" height="24">
+                  <a class="contacts-link" href="https://t.me/htmlacademy">
+                    <img class="search" src="images/telegram.svg" width="24" height="24">
                     <span class="visually-hidden">Ссылка телеграмм</span>
                   </a>
                 </li>
                 <li class="contacts-item">
-                  <a class="contacts-link" href="https://vk.com/htmlacademy" ><img class="search" src="images/vk.svg" width="24" height="24">
+                  <a class="contacts-link" href="https://vk.com/htmlacademy" >
+                    <img class="search" src="images/vk.svg" width="24" height="24">
                     <span class="visually-hidden">Ссылка ВКонтакте</span>
                   </a>
                 </li>
                 <li class="contacts-item">
-                  <a class="contacts-link" href="https://www.youtube.com/user//htmlacademyru"><img class="search" src="images/youtube.svg" width="24" height="24">
+                  <a class="contacts-link" href="https://www.youtube.com/user//htmlacademyru">
+                    <img class="search" src="images/youtube.svg" width="24" height="24">
                     <span class="visually-hidden">Ссылка Ютюб</span>
                   </a>
                 </li>
