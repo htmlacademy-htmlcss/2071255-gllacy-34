@@ -98,6 +98,21 @@ ul{
     line-height: 20px;
     font-weight: 700;
 }
+.button-pink:hover{
+    background-color: var(--extra-light);
+    border: 4px solid var(--extra-bright-additional);
+    color: var(--extra-dark);
+}
+.button-pink:focus{
+    background-color: var(--light-additional);
+    border: 2px solid var(--extra-dark);
+    color: var(--extra-light);
+}
+.button-pink:active{
+    background-color: var(--extra-bright-additional);
+    border: 2px solid var(--extra-dark);
+    color: var(--extra-light);
+}
 /*Хедер главной страницы*/
 
 .main-header {
@@ -132,8 +147,9 @@ ul{
     
 }
 .navigation-link:focus{
-    background-color: rgba(252, 252, 252, 0.5);
+
     box-shadow: inset 0 0 0 2px var(--extra-dark); 
+    border: none;
 
 }
 .navigation-link:active{
@@ -265,11 +281,42 @@ ul{
 }
 
 .slider-button{
-    background-color: transparent;
+    position: relative;
+    background-color: rgba(252, 252, 252, 0.3);
     margin: 0;
     padding: 0;
-    border: none;
+    border: 2px solid var(--extra-light);
     height: 38px;
+    width: 38px;
+    border-radius: 26px;
+}
+.slider-svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    fill: var(--extra-light);
+    transform: translate(-50%, -50%);
+
+}
+.slider-button:hover{
+    background-color: var(--extra-light);
+}
+.slider-button:hover svg{
+    fill: var(--extra-dark);
+}
+.slider-button:focus{
+    background-color: rgba(252, 252, 252, 0.3);
+    border: 2px solid var(--extra-dark);
+}
+.slider-button:focus svg{
+    fill: var(--extra-dark);
+}
+.slider-button:active{
+    background-color: rgba(252, 252, 252, 0.5);
+    border: 2px solid rgba(252, 252, 252, 0.5);
+}
+.slider-button:active svg{
+    fill: var(--extra-dark);
 }
 .image-slider{
     margin: 21px 22px 26px 22px;
@@ -294,22 +341,44 @@ ul{
     display: flex;
     margin: 0;
     padding: 0;
-    height: 24px;
 }
 .contacts-item{
-    box-sizing: content-box;
-    height: 100%;
-    margin-right: 16px;
-    border: 2px solid var(--extra-light);
-    border-radius: 24px;
+    margin-right: 12px;
+
 }
 .contacts-item:last-child{
     margin-right: 0;
 }
-.search{
+.contacts-link{
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgba(252, 252, 252, 0.3);
+    border-radius: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contacts-link-tg{
+    fill: var(--extra-light);
+}
+.contacts-link-tg:hover{
+    fill: var(--extra-light);
+    background-color: var(--extra-dark);
 
 }
+.contacts-link-tg:active{
+    opacity: 0.5;
+}
+.contacts-link-tg:focus{
 
+}
+.contacts-link-vk{
+    background-image: url('../images/vk.svg');
+}
+.contacts-link-yt{
+    background-image: url('../images/youtube.svg');
+    fill: red;
+}
 /**Банеры**/
 .gift{
     margin-bottom: 80px;
@@ -362,6 +431,7 @@ ul{
 .gift-image{
     position: absolute;
     right: 0;
+    bottom: 0;
 
 }
 /**Лучшие вкусы мороженого**/
@@ -550,6 +620,8 @@ ul{
     margin-right: 14px;
     flex-grow: 1;
     padding-left: 16px;
+    border: 1px solid var(--neutral);
+    border-radius: 4px;
 }
 
 /**Доставка**/
