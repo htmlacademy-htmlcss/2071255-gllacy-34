@@ -58,10 +58,7 @@ body {
 ul{
     list-style-type: none;
 }
-.main-container{
-    width: 1170px;
-    margin: 0 auto;
-}
+
 /**Кнопки**/
 .button-white {
     display: inline-block;
@@ -77,15 +74,20 @@ ul{
 .button-white:hover{
     background-color: rgba(252, 252, 252, 0.4);
     border: 4px solid var(--extra-light);
-}
-.button-white:focus{
-    background-color: var(--extra-light);
-    border: 2px solid var(--extra-dark);
+    
 }
 .button-white:active{
-    background-color: rgba(252, 252, 252, 0.4);
+    background-color: var(--extra-light);
     border: 2px solid var(--extra-dark);
+    padding: 14px 34px;
 }
+.button-white:focus{
+    background-color: rgba(252, 252, 252, 0.5);
+    border: 2px solid var(--extra-dark);
+    outline: none;
+    padding: 14px 34px;
+}
+
 .button-pink {
     background-color: var(--extra-bright-additional);
     border: 4px solid var(--light-additional);
@@ -107,16 +109,20 @@ ul{
     background-color: var(--light-additional);
     border: 2px solid var(--extra-dark);
     color: var(--extra-light);
+    padding: 14px 34px;
 }
 .button-pink:active{
     background-color: var(--extra-bright-additional);
     border: 2px solid var(--extra-dark);
     color: var(--extra-light);
+    padding: 14px 34px;
 }
 /*Хедер главной страницы*/
 
 .main-header {
     display: flex;
+    width: 1170px;
+    margin: 0 auto;
 
 }
 .navigation {
@@ -143,14 +149,12 @@ ul{
     border-radius: 30px;
 }
 .navigation-link:hover{
-    background-color: rgba(252, 252, 252, 0.5);
-    
+    background-color: rgba(252, 252, 252, 0.5); 
 }
 .navigation-link:focus{
-
+    background-color: rgba(252, 252, 252, 0.5);
     box-shadow: inset 0 0 0 2px var(--extra-dark); 
-    border: none;
-
+    outline: none;
 }
 .navigation-link:active{
     background-color: var(--extra-light);
@@ -163,10 +167,10 @@ ul{
     margin: 0;
     padding: 0;
     height: 32px;
-
 }
 
 .user-item{
+    position: relative;
     margin-right: 16px;
     padding: auto 16px;
     box-sizing: border-box;
@@ -212,23 +216,74 @@ ul{
     background-color: rgba(252, 252, 252, 0.5);
 }
 .user-link:focus{
-    background-color: var(--extra-light);
-    border: none;
-}
-.user-link:active{
     background-color: rgba(252, 252, 252, 0.5);
     box-shadow: inset 0 0 0 2px var(--extra-dark);
-
+    outline: none;
+    
 }
-.navigation-current{
+.user-link:active{
+    background-color: var(--extra-light);
+    outline: none;
+    box-shadow: none;
+}
+.navigation-current,
+.user-link-current{
     background-color: var(--bright-additional);
     color: var(--extra-light);
+
 }
 .navigation-current .user-icon{
     fill: var(--extra-light);
 }
+.user-link-current .user-icon{
+    fill: var(--extra-light);
+}
+/**Поповер хедера**/
+/**Поиск**/
+.popover-search-content{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 356px;
+    padding: 24px 16px;
+    background-color: var(--extra-light);
+    border-radius: 4px;
+    display: none;
+}
+.popover-open{
+    display: block;
+}
+.popover-search-form input{
+    box-sizing: border-box;
+    padding: 13px 16px;
+    width: 100%;
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    border: 1px solid var(--neutral);
+    border-radius: 4px;
+}
+/**Поповер корзина**/
+.popover-cart{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 1;
+    width: 441px;
+    padding: 48px;
+    background-color: var(--extra-light);
+    border-radius: 4px;
 
+}
 /*слайдер*/
+.main-index{
+    width: 1170px;
+    margin: 0 auto;
+}
 .main-information{
     display: flex;
     position: relative;
@@ -353,32 +408,64 @@ ul{
     display: block;
     width: 24px;
     height: 24px;
-    border: 2px solid rgba(252, 252, 252, 0.3);
+    box-shadow: 0px 0px 0 2px rgba(252, 252, 252, 0.3);
     border-radius: 24px;
     background-position: center;
     background-repeat: no-repeat;
+    outline: none;
 }
 .contacts-link-tg{
     fill: var(--extra-light);
 }
 .contacts-link-tg:hover{
-    fill: var(--extra-light);
     background-color: var(--extra-dark);
+
+}
+.contacts-link-tg:focus{
+    background-color: var(--extra-dark);
+    box-shadow: 0px 0px 0 2px var(--extra-dark);
 
 }
 .contacts-link-tg:active{
     opacity: 0.5;
-}
-.contacts-link-tg:focus{
-
+    background-color: var(--extra-dark);
+    box-shadow: 0px 0px 0 2px var(--extra-dark);
 }
 .contacts-link-vk{
-    background-image: url('../images/vk.svg');
+    fill: var(--extra-light);
+}
+.contacts-link-vk:hover{
+    background-color: var(--extra-dark);
+
+}
+.contacts-link-vk:focus{
+    background-color: var(--extra-dark);
+    box-shadow: 0px 0px 0 2px var(--extra-dark);
+
+}
+.contacts-link-vk:active{
+    opacity: 0.5;
+    background-color: var(--extra-dark);
+    box-shadow: 0px 0px 0 2px var(--extra-dark);
 }
 .contacts-link-yt{
-    background-image: url('../images/youtube.svg');
-    fill: red;
+    fill: var(--extra-light);
 }
+.contacts-link-yt:hover{
+    background-color: var(--extra-dark);
+
+}
+.contacts-link-yt:focus{
+    background-color: var(--extra-dark);
+    box-shadow: 0px 0px 0 2px var(--extra-dark);
+
+}
+.contacts-link-yt:active{
+    opacity: 0.5;
+    background-color: var(--extra-dark);
+    box-shadow: 0px 0px 0 2px var(--extra-dark);
+}
+
 /**Банеры**/
 .gift{
     margin-bottom: 80px;
@@ -491,16 +578,41 @@ ul{
     line-height: 24px;
 }
 .buy-bestseller {
+    position: relative;
     width: 32px;
     height: 32px;
-    border: none;
+    border: 2px solid var(--extra-bright-additional) ;
     border-radius: 50%;
     background-color: var(--extra-bright-additional);
-    background-image: url("../images/white-basket-icon.svg");
-    background-repeat: no-repeat ;
-    background-position: center;
 
 }
+.buy-bestseller svg{
+    position: absolute;
+    fill: white;
+    top: 25%;
+    left: 25%;
+}
+.buy-bestseller:hover{
+    background-color: rgba(252, 252, 252, 0.3);
+}
+.buy-bestseller:hover svg{
+    fill: black;
+}
+
+.buy-bestseller:focus{
+    background-color: var(--extra-bright-additional);
+    border: 2px solid var(--extra-dark);
+}
+.buy-bestseller:focus svg{
+    fill: white;
+}
+.buy-bestseller:active{
+    background-color: var(--extra-light-additional);
+}
+.buy-bestseller:active svg{
+    fill: black;
+}
+
 /**Преимущества**/
 .advantages {
     background-image: url("../images/advantages/waffle-background.jpg");
@@ -558,7 +670,6 @@ ul{
 }
 .shop-news {
     width: 570px;
-    height: 224px;
     background-image: url("../images/news-picture.jpg");
     background-size: cover;
     background-position: center;
@@ -622,6 +733,10 @@ ul{
     padding-left: 16px;
     border: 1px solid var(--neutral);
     border-radius: 4px;
+    color: var(--extra-dark);
+}
+.mailing-form-input{
+
 }
 
 /**Доставка**/
@@ -661,6 +776,7 @@ ul{
     padding: 40px;
     background-color: var(--white);
     border-radius: 8px;
+    box-sizing: border-box;
 }
 .delivery-information-description{
     margin: 0;
@@ -673,31 +789,28 @@ ul{
     color: var(--dark);
 }
 .delivery-form-wrapper{
-    display: grid;
-    grid-template-columns: 117px 287px;
-    grid-template-rows: 76px 76px;
-    grid-column-gap: 16px;
-    grid-row-gap: 20px;
-    margin-bottom: 28px;
+
+}
+.form-delivery-information{
+    display: flex;
+    gap: 20px 16px;
+    flex-wrap: wrap;
 }
 
 .delivery-information-date{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    
-    max-width: 117px;
-}
-.form-delivery-information-date{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 117px;
 }
+
 .form-label{
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
     color: var(--extra-dark);
+    margin-bottom: 8px;
 }
 .delivery-input{
     font-family: "Inter", sans-serif;
@@ -707,18 +820,16 @@ ul{
 }
     
 .delivery-information-telephone{
-    grid-column: 2/3;
-    grid-row: 1/2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
 }
 .delivery-information-address{
-    grid-column: 1/3;
-    grid-row: 2/3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-basis: 100%;
 }
 .delivery-input{
     display: block;
@@ -737,7 +848,7 @@ ul{
 }
 .confirm-delivery{
     display: block;
-    margin: 0 auto;
+    margin: 8px auto 0;
 }
 
 /**Контакты**/
@@ -822,6 +933,8 @@ label.required::after {
 .main-footer{
     display: flex;
     padding-top: 44px;
+    width: 1170px;
+    margin: 0 auto;
 }
 /**Контакты футер**/
 .main-footer-contacts{
@@ -839,12 +952,15 @@ label.required::after {
 }
 /**Ссылки футер**/
 .footer-link{
+    width: 356px;
     margin-right: 200px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: min-content;
     row-gap: 8px;
     column-gap: 24px;
+    position: relative;
+    padding-left: 24px;
 }
 
 .footer-link a{
@@ -858,17 +974,31 @@ label.required::after {
 }
 .footer-link-supplier::before{
     content: url("../images/heart-icon.svg");
+    margin-right: 8px;
+    position: absolute;
+    top: 2px;
+    left: 0px
 }
 /**Авторские права**/
 .copyright{
     margin-right: 14px;
+    display: flex;
+    flex-direction: column;
 }
 .copyright-logo{
     margin-bottom: 14px;
+
 }
 .copyright-text{
     width: max-content;
     margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+}
+.htmlacademy-link{
+    color: var(--extra-dark);
+    text-decoration: none;
+    border-bottom: 1px solid var(--extra-dark);
 }
 /**Каталог??**/
 /**Хлебные крошки**/
