@@ -39,9 +39,12 @@
 body {
     font-family: "Inter", sans-serif;
     color: var(--extra-dark);
-    background-color: var(--light-additional);
+    
     font: var(--regular-size);
     margin: 0;
+}
+.background-wrapper{
+    background-color: var(--light-additional);
 }
 .visually-hidden {
     position: absolute;
@@ -277,7 +280,91 @@ ul{
     padding: 48px;
     background-color: var(--extra-light);
     border-radius: 4px;
+    box-sizing: border-box;
+    display: none;
+}
+.popover-title{
+    margin: 0;
+    margin-bottom: 32px;
+    line-height: 30px;
+}
+.cart-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 28px;
+}
+.cart-item{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
 
+.cart-item:last-child{
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--light);
+}
+.cart-item-wrapper{
+    display: grid;
+    grid-template-columns: 46px 82px;
+    column-gap: 16px;
+    row-gap: 4px;
+}
+.cart-item-image{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.cart-item-title{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: var(--extra-dark);
+}
+.cart-item-price-info{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--neutral);
+}
+.cart-item-price{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: var(--extra-dark);
+}
+.cart-item-delete{
+    background-color: transparent;
+    border: none;
+}
+.total-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-price-total{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: var(--extra-dark);
 }
 /*слайдер*/
 .main-index{
@@ -735,10 +822,28 @@ ul{
     border-radius: 4px;
     color: var(--extra-dark);
 }
-.mailing-form-input{
+.mailing-form-input:hover{
+    border: 1px solid var(--extra-dark);
+}
+.mailing-form-input:focus{
+    outline: 2px solid var(--extra-dark);
+}
+.mailing-form-input:invalid{
+    border: 1px solid #ea5454;
+}
+.mailing-form-input:focus:invalid{
+    outline: 2px solid #ea5454;
+}
+.mailing-form-input:disabled{
+    border: 1px solid var(--neutral);
+    background-color: var(--light);
+}
+.mailing-form-input:disabled:hover{
+    border: 1px solid var(--neutral);
+    background-color: var(--light);
+
 
 }
-
 /**Доставка**/
 .delivery-background {
     background-image: url("../images/delivery-background-image.jpg");
@@ -1002,6 +1107,10 @@ label.required::after {
 }
 /**Каталог??**/
 /**Хлебные крошки**/
+.catalog-content{
+    width: 1170px;
+    margin: 0 auto;
+}
 .navigation-link-current{
     background-color: var(--extra-bright-additional);
     border-radius: 30px;
