@@ -7,6 +7,7 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+    <div class="background-wrapper">
       <header class="main-header">
         <h1 class="visually-hidden">Магазин мороженного GllacyShop</h1>
         <img class="logo" src="images/logo.svg" alt="Логотип мазагина мороженного" width="137px" height="56px">
@@ -61,16 +62,34 @@
                 <div class="popover popover-cart">
                   <div class="popover-cart-content">
                     <h2 class="popover-title">Корзина</h2>
-                    <ul class="-cart-list">
-                      <li class="-cart-item">
-                        <p class="cart-item-title">Малинка</p>
-                        <p class="cart-item-price-info">1кг х 310 	&#8381;</p>
-                        <p class="cart-item-price">310	&#8381;</p>
-                        <button type="button" class="cart-item-delete">
-                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.803 1.138A.667.667 0 1 0 8.86.195L5 4.056 1.137.196a.667.667 0 1 0-.943.942L4.056 5 .196 8.86a.667.667 0 0 0 .942.943L5 5.942 8.86 9.803a.667.667 0 1 0 .943-.943L5.942 5l3.861-3.862Z" fill="#2D3440"/></svg>
-                        </button>
+                    <ul class="cart-list">
+                      <li class="cart-item">
+                        <div class="cart-item-wrapper">
+                          <img class="cart-item-image" src="../2071255-gllacy-34/images/catalog/raspberry-jam.png" width="46px" height="46px">
+                          <p class="cart-item-title">Малинка</p>
+                          <p class="cart-item-price-info">1кг х 310 	&#8381;</p>
+                        </div>
+                          <p class="cart-item-price">310	&#8381;</p>
+                          <button type="button" class="cart-item-delete">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.803 1.138A.667.667 0 1 0 8.86.195L5 4.056 1.137.196a.667.667 0 1 0-.943.942L4.056 5 .196 8.86a.667.667 0 0 0 .942.943L5 5.942 8.86 9.803a.667.667 0 1 0 .943-.943L5.942 5l3.861-3.862Z" fill="#2D3440"/></svg>
+                          </button>
+                      </li>
+                      <li class="cart-item">
+                        <div class="cart-item-wrapper">
+                          <img class="cart-item-image" src="../2071255-gllacy-34/images/catalog/bubble-gum.jpg" width="46px" height="46px">
+                          <p class="cart-item-title">Бабл-гам</p>
+                          <p class="cart-item-price-info">1,5кг х 320 	&#8381;</p>
+                        </div>
+                          <p class="cart-item-price">480	&#8381;</p>
+                          <button type="button" class="cart-item-delete">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.803 1.138A.667.667 0 1 0 8.86.195L5 4.056 1.137.196a.667.667 0 1 0-.943.942L4.056 5 .196 8.86a.667.667 0 0 0 .942.943L5 5.942 8.86 9.803a.667.667 0 1 0 .943-.943L5.942 5l3.861-3.862Z" fill="#2D3440"/></svg>
+                          </button>
                       </li>
                     </ul>
+                    <div class="total-price">
+                      <button class="button-pink button-cart">Оформить заказ</button>
+                      <p class="cart-price-total">Итого: 790	&#8381;</p>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -258,7 +277,7 @@
                 в курсе всего самого вкусного, что у нас происходит. 
                 Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                   <form class="mailing-form" action="https://echo.htmlacademy.ru/courses" method="post">
-                    <input class="mailing-form-input" type="email" id="mailing-list-email" name="mailing-list-email" placeholder="email@example.com">
+                    <input class="mailing-form-input" type="email" id="mailing-list-email" name="mailing-list-email" placeholder="email@example.com" disabled>
                     <button class="button-pink mailing-list-button" type="submit">Отправить</button>
                   </form>
             </div>
@@ -339,8 +358,6 @@
               href="https://htmlacademy.ru/">.html academy</a> &copy; 2021</p>
           </section>
         </footer>
-  </div>
-    
-
+      </div>
   </body>
 </html>
