@@ -39,9 +39,9 @@
 body {
     font-family: "Inter", sans-serif;
     color: var(--extra-dark);
-    
     font: var(--regular-size);
     margin: 0;
+    min-width: 1170px;
 }
 .background-wrapper{
     background-color: var(--light-additional);
@@ -73,6 +73,7 @@ ul{
     border: solid 4px var(--extra-light-additional);
     border-radius: 26px;
     padding: 12px 32px;
+    max-height: 52px;
 }
 .button-white:hover{
     background-color: rgba(252, 252, 252, 0.4);
@@ -575,6 +576,8 @@ ul{
     gap: 30px;
     margin: 0;
     padding: 0;
+    align-items: flex-start;
+    
 }
 .gift-item {
     position: relative;
@@ -583,10 +586,13 @@ ul{
     border-radius: 16px;
     display: grid;
     grid-template-columns: 328px auto;
+    grid-template-rows: max-content max-content max-content;
     row-gap: 28px;
     column-gap: 0;
     padding-left: 36px;
     box-sizing: border-box;
+
+
 }
 .gift-subtitle {
     grid-column: 1/2;
@@ -620,7 +626,7 @@ ul{
 }
 /**Лучшие вкусы мороженого**/
 .bestseller{
-    margin-bottom: 80px;
+    margin-bottom: -10px;
 }
 .bestseller-title {
     font: var(--title-text);
@@ -633,6 +639,7 @@ ul{
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 .bestseller-item {
     width: 270px;
@@ -643,10 +650,12 @@ ul{
     background-color: var(--extra-light);
     box-sizing: border-box;
     border-radius: 8px;
+    margin-bottom: 90px;
 }
 .bestseller-item:nth-child(4n+4){
     margin-right: 0;
 }
+
 .bestseller-image {
     border-radius: 150px;
     margin: -51px auto 0;
@@ -839,12 +848,6 @@ ul{
 .mailing-form-input:focus{
     outline: 2px solid var(--extra-dark);
 }
-.mailing-form-input:invalid{
-    border: 1px solid #ea5454;
-}
-.mailing-form-input:focus:invalid{
-    outline: 2px solid #ea5454;
-}
 .mailing-form-input:disabled{
     border: 1px solid var(--neutral);
     background-color: var(--light);
@@ -852,8 +855,13 @@ ul{
 .mailing-form-input:disabled:hover{
     border: 1px solid var(--neutral);
     background-color: var(--light);
+}
+.mailing-form-input:invalid{
+    border: 1px solid #ea5454;
 
-
+}
+.mailing-form-input:focus:invalid{
+    outline: 2px solid #ea5454;
 }
 /**Доставка**/
 .delivery-background {
