@@ -39,9 +39,9 @@
 body {
     font-family: "Inter", sans-serif;
     color: var(--extra-dark);
-    
     font: var(--regular-size);
     margin: 0;
+    min-width: 1170px;
 }
 .background-wrapper{
     background-color: var(--light-additional);
@@ -73,6 +73,7 @@ ul{
     border: solid 4px var(--extra-light-additional);
     border-radius: 26px;
     padding: 12px 32px;
+    max-height: 52px;
 }
 .button-white:hover{
     background-color: rgba(252, 252, 252, 0.4);
@@ -96,6 +97,7 @@ ul{
     border: 4px solid var(--light-additional);
     border-radius: 26px;
     color: var(--extra-light);
+    text-decoration: none;
     margin: 0;
     padding: 12px 32px;
     font-family: 'Inter', sans-serif;
@@ -134,6 +136,7 @@ ul{
     align-items: center;
     font: var(--regular-size);
     flex-grow: 1;
+    line-height: 20px;
 }
 .logo{
     margin: 24px 16px 24px 0;
@@ -194,6 +197,7 @@ ul{
 .user-link.telephone{
     line-height: 20px;
     font-weight: 700;
+    font-size: 16px;
     margin: 0;
     padding: 6px 0;
     background-color: transparent;
@@ -575,6 +579,8 @@ ul{
     gap: 30px;
     margin: 0;
     padding: 0;
+    align-items: flex-start;
+    
 }
 .gift-item {
     position: relative;
@@ -583,10 +589,13 @@ ul{
     border-radius: 16px;
     display: grid;
     grid-template-columns: 328px auto;
+    grid-template-rows: max-content max-content max-content;
     row-gap: 28px;
     column-gap: 0;
     padding-left: 36px;
     box-sizing: border-box;
+
+
 }
 .gift-subtitle {
     grid-column: 1/2;
@@ -620,19 +629,21 @@ ul{
 }
 /**Лучшие вкусы мороженого**/
 .bestseller{
-    margin-bottom: 80px;
+    margin-bottom: -10px;
 }
 .bestseller-title {
     font: var(--title-text);
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 56px;
+    margin-bottom: 107px;
+    width: 600px;
 }
 .bestseller-list{
     margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 .bestseller-item {
     width: 270px;
@@ -643,10 +654,12 @@ ul{
     background-color: var(--extra-light);
     box-sizing: border-box;
     border-radius: 8px;
+    margin-bottom: 90px;
 }
 .bestseller-item:nth-child(4n+4){
     margin-right: 0;
 }
+
 .bestseller-image {
     border-radius: 150px;
     margin: -51px auto 0;
@@ -660,6 +673,7 @@ ul{
     text-align: center;
 }
 .bestseller-description{
+    margin: 0;
     margin-bottom: 16px;
     text-align: center;
 
@@ -772,6 +786,7 @@ ul{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: var(--extra-light);
     border-radius: 16px;
     padding: 32px;
     box-sizing: border-box;
@@ -839,12 +854,6 @@ ul{
 .mailing-form-input:focus{
     outline: 2px solid var(--extra-dark);
 }
-.mailing-form-input:invalid{
-    border: 1px solid #ea5454;
-}
-.mailing-form-input:focus:invalid{
-    outline: 2px solid #ea5454;
-}
 .mailing-form-input:disabled{
     border: 1px solid var(--neutral);
     background-color: var(--light);
@@ -852,8 +861,13 @@ ul{
 .mailing-form-input:disabled:hover{
     border: 1px solid var(--neutral);
     background-color: var(--light);
+}
+.mailing-form-input:invalid{
+    border: 1px solid #ea5454;
 
-
+}
+.mailing-form-input:focus:invalid{
+    outline: 2px solid #ea5454;
 }
 /**Доставка**/
 .delivery-background {
@@ -861,6 +875,7 @@ ul{
     background-size: cover;
     transform: scale(-1, 1);
     background-position: left 30% top 50%;
+    background-color: var(--neutral);
     margin-bottom: 80px;
     min-height: 534px;
     border-radius: 16px;
@@ -904,9 +919,7 @@ ul{
     font-weight: 400;
     color: var(--dark);
 }
-.delivery-form-wrapper{
 
-}
 .form-delivery-information{
     display: flex;
     gap: 20px 16px;
@@ -974,6 +987,7 @@ ul{
     background-image: url("../images/footer-3-ice-cream.jpg");
     background-size: cover;
     background-position: center;
+    background-color: var(--neutral);
     padding: 64px;
     border-radius: 16px;
     
@@ -990,7 +1004,7 @@ ul{
 }
 .main-footer-description{
     margin: 0;
-    max-width: 180px;
+    max-width: 280px;
 }
 .main-footer-address-link{
     margin: 0;
